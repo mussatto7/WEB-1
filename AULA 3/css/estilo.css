@@ -1,0 +1,49 @@
+/Arquivo CSS/
+
+/seletor de tag/
+body {
+	background-color:#000;
+	color:#fff;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size:14px;
+	text-align:justify;
+}
+
+section {
+	width:90%;
+	margin:auto;
+}
+
+header {
+	width:100%;
+	height:150px;
+	background:#008080;
+}
+
+nav {
+	width:100%;
+	height:50px;
+	background:#4682B4;
+}
+
+aside {
+	width:30%;
+	height:400px;
+	background:#00CED1;
+	float:left;
+}
+
+main {
+	width:70%;
+	height:400px;
+	background-color:#A020F0;
+	color:#ccc;
+	float:right;
+}
+
+footer {
+	width:100%;
+	height:50px;
+	background-color:#008080;
+	clear:both;
+}
