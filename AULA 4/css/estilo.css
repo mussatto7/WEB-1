@@ -1,0 +1,105 @@
+/*Arquivo de CSS*/
+
+body {
+	background:#CD853F;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+}
+
+section {
+	width:95%;
+	margin:auto;
+}
+
+header {
+	width:100%;
+	background-color:#B22222;
+	height:200px;
+}
+
+/*Declaração de classe*/
+.titulo {
+	font-family:'Surfista Original', cursiva;
+	font-size:5em;
+	font-weight:900;
+	margin-left:2%;
+	color:#D3D3D3;
+	padding-top:4%;
+}
+
+nav {
+	width:100%;
+	height:60px;
+	background-color:#000000;
+}
+
+aside {
+	width:30%;
+	height:480px;
+	background:#CD853F;
+	float:left;
+}
+
+main {
+	width:70%;
+	height:auto;
+	background-color:#CD853F;
+	float:right;
+}
+
+footer {
+	width:100%;
+	height:60px;
+	background-color:#B22222;
+    clear:both;
+}
+	
+/*Classe de menu usando um seletor composto
+Nesta declaração vamos usar um seletor composto por uma classe(.menu)tag<a href=""></a>
+No CSS existe o estado do LINK
+-1°estado: link normal, ao carregar a página - a;
+-2°estado: link qdo mouse passa sobre - hover;
+-3°estado: link ativo, qdo o link está selecionado - active;
+-4°estado: link visitado, depois de clicado - visited;
+*/
+.menu a {
+	background:#1C1C1C;
+	color:#F0F8FF;
+	padding:1% 2%;
+	border: 1px solid #FFFAFA;
+	border-radius:2px;
+	margin-right:5px;
+	font-size:18px;
+	font-weight:700;
+	text-decoration:none;
+}
+ 
+.menu a:hover {
+	background:	#696969;
+	color:#FFFAFA;
+	border:1px solid #FFFAFA;
+	text-decoration;underline;
+}
+
+.tabelas,td {
+	border:1px solid #556B2F;
+	border-radius:2px;
+	width:90%;
+	padding:2%;
+}
+
+.top {
+	background:#B8860B;
+	color:#000000;
+	font-weight:400;
+}
+
+.conteudo {
+	width:90%;
+	height:auto;
+	border:1px solid #ccc;
+	border-radius:8px;
+	padding:1%;
+	margin-left:2%;
+}
+	
