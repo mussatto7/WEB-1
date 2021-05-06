@@ -1,0 +1,59 @@
+/*Arquivo de CSS*/
+
+body {
+	font-family:Verdana;
+	font-size:1em;
+}
+
+section {
+	width:100%;
+	margin:auto;
+}
+
+header {
+	width:100%;
+	background:#FF0000;
+	height:70px;
+}
+
+aside {
+	width:30%;
+	background:#DB7093;
+	height:650px;
+	float:right;
+}
+
+main {
+	width:70%;
+	background:#FFC0CB;
+	height:650px;
+	float:left;
+}
+
+footer {
+	width:100%;
+	background:#FF0000;
+	height:50px;
+	clear:both;	
+}
+
+.titulo {
+	font-family:'Surfista Original', cursiva;
+	font-size:2em;
+	font-weight:400;
+	margin-left:2%;
+	color:#D3D3D3;
+	padding-top:2%;
+}
+
+.tabela,td {
+	border:1px solid #F0E68C;
+	border-radius:2px;
+	width:85%;
+	padding:2%;
+}
+
+.top {
+	background:#00FA9A;
+	font-weight:300;
+}
