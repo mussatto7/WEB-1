@@ -1,0 +1,76 @@
+/*Arquivo de CSS Responsivo*/
+
+/*Estrutura do arquivo html tela grande*/
+body {
+	font: 1em/150% Arial, Helvetica, sans-serif;
+}
+
+header {
+	height:180px;
+	background:#09c;
+	color:#fff;
+}
+
+main {
+	width:600px;
+	background:#fff;
+	float:left;
+}
+
+aside {
+	width:400px;
+	float:right;
+	background:#0c6;
+}
+
+footer {
+	clear:both;
+	}
+	
+section {
+	padding:5px;
+	width:960px;
+	margin: 20px auto;
+}
+	
+	
+/*Acabamentos - Frufru*/
+main {
+	background-color:#06c;
+}
+
+aside {
+	background-color:#fcf;
+}
+
+footer {
+	background-color:#fc3;
+}
+
+header, main, aside {margin-bottom:5px;}
+section, header, aside, main, footer{
+	border:solid 1px #ccc;
+	border-radius:5px;
+}
+
+
+/*Media Queria com regras responsivas*/
+/*Mobile First*/
+/*Resolução máxima de 480px*/
+@media screen and (max-width:480px) {
+	header {height:auto;}
+	aside {display:none;}
+}
+
+/*Resolução máxima de 768px*/
+@media screen and (max-width:768px) {
+	main {width:auto; float:none;}
+	aside {width:auto; float:none;}
+}
+
+/*Resolução máxima de 1279px*/
+@media screen and (max-width:1279px) {
+	section {width:90%;}
+	main {width:65%;}
+	aside {width:34%;}
+}
