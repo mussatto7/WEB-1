@@ -12,13 +12,13 @@ header {
 }
 
 main {
-	width:600px;
+	width:550px;
 	background:#fff;
 	float:left;
 }
 
 aside {
-	width:400px;
+	width:390px;
 	float:right;
 	background:#0c6;
 }

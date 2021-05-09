@@ -1,0 +1,29 @@
+/*Arquivo para flex box*/
+
+.flex {
+	display:flex;
+}
+
+.flex-wrap {
+	flex-wrap:wrap;
+}
+
+.flex-item {
+	flex:1;
+}
+
+.item {
+	text-align:center;
+	margin:1%;
+	font-size:1 .2em;
+	font-weight:200;
+	background-color:#fcc;
+}
+
+.container {
+	width:95%;
+	margin:auto;
+}
+	
+	
+	

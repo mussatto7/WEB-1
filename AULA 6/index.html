@@ -5,13 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Layout Responsivo</title>
 <link href="css/estilo.css" rel="stylesheet">
-
+<link href="css/flex.css" rel="stylesheet">
 </head>
 <body>
 	<section>
 		<header>Topo do site</header>
-		<main>Conteúdo do site</main>
-		<aside>Aside</aside>
+		<main>
+			<h2>Flex Box</h2>
+			<div class="texto">são caixas flexiveis que podem se adaptar aos Breakpoints declarados no CSS - É como se fosse uma tabela.
+			<h3>Elementos e atributos trabalhados junto com o Flex Box:</h3>
+				<ul>
+					<ol>Display: Exibe um elemento</ol>
+					<ol>Flex-direction: direção do elementos, por padrão declaramos ele em row (linhas)
+					</ol>
+					<ol>Flex-wrap: define quebra de linha da caixa</ol>
+					<ol>Flex-flow: atalho para o uso do direction e wrap</ol>
+					<ol>Justify-content: conteudo justificado</ol>
+					<ol>align-intems: alinhamento dos itens dentro do elemento</ol>
+		</main>
+		<aside>
+			<h2>Montando um Flex Box</h2>
+				<h3>display:block;</h3>
+					<section class="container">
+					<div class="item">1<div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+					<div class="item">4</div>
+					</section>
+					<h3>Display:Flex;</h3>
+					<section class="container flex">
+					<div class="item">1</div>
+					<div class="item">2</div>
+					<div class="item">3</div>
+					<div class="item">4</div>
+					</section>
+					
+		</aside>
 		<footer>Rodapé</footer>	
 	</section>
 </body>
