@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	<title>Meu primeiro Bootstrap</title>
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-reboot.css" rel="stylesheet">
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<!--vinculo externo de Js-->
+	<script src="js/bootstrap.js"></script>
+	
+	
+  </head>
+  <body>
+	<section class="container-fluid">
+		<header class="jumbotron">
+			<h1>Cidade de Londres</h1>
+			<a href="#">Grã Bretanha</a>
+		</header>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top:-40px;">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Viagens <span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Destaques</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Preços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Pacotes</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	<main>
+		<h2>Venha viajar conosco!</h2>
+		<hr>
+		<h3>Veja nossos valores promocionais</h3>
+		<table class="table">
+		<!--Thead é cabeçalho de tabela-->
+		  <thead class="thead-dark">
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">Valores</th>
+			  <th scope="col">Viagem/Avião</th>
+			  <th scope="col">Viagem/Navio</th>
+			</tr>
+		  </thead>
+		  <!--Tbody é o corpo da tabela-->
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Irlanda</td>
+			  <td> R$ 3.264</td>
+			  <td>R$ 6.891</td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Inglaterra</td>
+			  <td> R$ 3.264</td>
+			  <td>R$ 6.891</td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>Escócia</td>
+			  <td> R$ 3.264</td>
+			  <td>R$ 6.891</td>
+			</tr>
+		  </tbody>
+		</table>
+	<hr>
+	<h2>Configuração das Grids</h2>
+	<!--classe container ou container-fluid-->
+	<div class="container-fluid">
+		<!--classe de linha = row-->
+		<div class="row">
+			<div class="col-md-1 border">1 Tam.1</div>
+			<div class="col-md-1 border">2 Tam.1</div>
+			<div class="col-md-1 border">3 Tam.1</div>
+			<div class="col-md-1 border">4 Tam.1</div>
+			<div class="col-md-1 border">5 Tam.1</div>
+			<div class="col-md-1 border">6 Tam.1</div>
+			<div class="col-md-1 border">7 Tam.1</div>
+			<div class="col-md-1 border">8 Tam.1</div>
+			<div class="col-md-1 border">9 Tam.1</div>
+			<div class="col-md-1 border">10 Tam.1</div>
+			<div class="col-md-1 border">11 Tam.1</div>
+			<div class="col-md-1 border">12 Tam.1</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-2 border">1 Tam.2</div>
+			<div class="col-md-2 border">2 Tam.2</div>
+			<div class="col-md-2 border">3 Tam.2</div>
+			<div class="col-md-2 border">4 Tam.2</div>
+			<div class="col-md-2 border">5 Tam.2</div>
+			<div class="col-md-2 border">6 Tam.2</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3 border">1 Tam.3</div>
+			<div class="col-md-3 border">2 Tam.3</div>
+			<div class="col-md-3 border">3 Tam.3</div>
+			<div class="col-md-3 border">4 Tam.3</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 border">Tam.12</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3 border" style="background:#ccc;">Tamanho 3</div>
+			<div class="col-md-6" style="background:#800; color:#fff;">Tamanho 6</div>
+			<div class="col-md-3 border" style="background:#ccc;">Tamanho 3</div>	
+	    </div>
+		
+	
+	
+	</main>
+	<footer>Informações de Viagens</footer>
+	
+	
+	</section>
+  
+    
+	
+	
+	
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
