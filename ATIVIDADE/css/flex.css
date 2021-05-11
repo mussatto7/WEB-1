@@ -1,0 +1,14 @@
+  
+/*Arquivo Flex*/
+
+.container {
+	margin:auto;
+	width:90%;
+}
+
+.item {
+	text-align:center;
+	margin:1%;
+	font-size:0.75em;
+	font-weight:200;
+}
