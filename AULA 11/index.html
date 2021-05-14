@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="css/bootstrap-reboot.css" rel="stylesheet"
+	<link href="css/bootstrap.css" rel="stylesheet"
+	<link href="css/bootstrap-grid.css" rel="stylesheet"
+	
+    <title>Formulário</title>
+  </head>
+  <body>
+	<section class="container">
+		<div style="width:50%; border-radius:4rem; border:solid 1px; padding:2%;">
+		
+			<form action="endereço da página e/ou arquivo que processa os dados" method="post">
+				<legend>Componentes de Formulário</legend>
+				<hr>
+				
+				<!--Entrada de dados do tipo texto-->
+				<label for="nome" style="padding-top:3%">Nome</label>
+				<input type="text" id="nome" name="nome" class="form-control" required placeholder="Digite o seu nome">
+				
+				<!--Entrada de dados do tipo email-->
+				<label for="email" style="padding-top:3%">Email</label>
+				<input type="email" id="email" name="email" class="form-control" placeholder="digite seu email" required>
+		
+				<!--Entrada de dados do tipo data-->
+				<label for="data" style="padding-top:3%">Escolha uma data</label>
+				<input type="date" id="data" class="form-control" placeholder="escolha uma data" required>
+				
+				<!--Entrada de dados do tipo cor-->
+				<label for="cores" style="padding-top:3%">Escolha uma cor</label>
+				<input type="color" id="cores" class="form-control" value="#FF0000">
+				
+				<!--Tag select para múltipla escolha-->
+				<label style="padding-top:3%">Escolha um mês</label>
+					<select class="form-control">
+						<option>Janeiro</option>
+						<option>Fevereiro</option>
+						<option>Março</option>
+						<option>Abril</option>
+						<option>Maio</option>
+					</select>
+					
+				<!--Campo de Número com seta-->
+				<label for="número" style="padding-top:3%">Selecione um valor</label>
+				<input type="number" id="numero" name="numero" class="form-control" min="1" max="300">
+				
+				<!--Campo de Número com squeeze-->
+				<label for="numeros" style="padding-top:3%">Arraste para selecionar um valor</label>
+				<input type="range" id="numeros" name="numero" class="form-control" value="50">
+				
+				<!--Inserindo URL-->
+				<label for="urls" style="padding-top:3%">Digite uma URL</label>
+				<input type="url" id="urls" name="urls" class="form-control" placeholder="Digite uma URL válida" required>
+				
+				<!--Entrada de dados de semana-->
+				<label for="semana" style="padding-top:3%">Selecione uma semana do ano</label>
+				<input type="week" id="semana" name="semana" class="form-control">
+				
+				<!--Entrada de dados do tipo arquivo-->
+				<label for="arquivo" style="padding-top:3%">Selecione um arquivo para enviar</label>
+				<input type="file" id="arquivo" class="form-control">
+				
+				<!--Radio Button: única seleção-->
+				<label for="btn-radio" style="padding-top:3%">Selecione uma opção</label>
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<div class="input-group-text">
+				<label>Chekbox</label>
+				<input type="checkbox" aria-label="Chebox para permitir input text">
+				</div>
+				</div>
+				<input type="text" class="form-control" aria-label="Input text com checkbox">
+				</div>
+
+				<div class="input-group">
+					<div class="input-group-prepend">
+				<div class="input-group-text">
+				<label>Botão de Rádio</label>
+				<input type="radio" aria-label="Botão radio para acompanhar input text">
+				</div>
+				</div>
+				<input type="text" class="form-control" aria-label="Input text com botão radio">
+				</div>
+				<hr>
+
+				<button type="button" class="btn">Enviar</button>
+				<input type="submit" class="btn btn-primary" value="Enviar">
+				<input type="submit" class="btn btn-secondary" value="Enviar">
+				<input type="submit" class="btn btn-seccess" value="Enviar">
+				<input type="submit" class="btn btn-danger" value="Enviar">
+				<input type="submit" class="btn btn-warning" value="Enviar">
+				<input type="submit" class="btn btn-info" value="Enviar">
+				<input type="submit" class="btn btn-dark" value="Enviar">
+				<input type="reset" class="btn btn-ligth" value="Enviar">
+				<input type="reset" class="btn btn-link" value="Enviar">
+				
+				
+				
+			</form>
+		</div>
+	</section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
