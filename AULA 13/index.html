@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+	
+    <title>Arquivo de JavaScript</title>
+	<!--declaração de CSS-->
+	<style type="text/css">
+		body {
+			font-family: 'Work Sans', sans-serif;
+			}
+	</style>
+	
+	<!--Declaração de script interno de Js-->
+	<script>
+		estado = 0;
+		
+			function mudaCores() {
+				var elemento = document.getElementById("item");
+				var cor = document.querySelector("#paletaCor");
+				var corFundo = document.querySelector("#paletaCorFundo");
+				
+				if(estado == 0) {
+					elemento.style.color = cor.value;
+					elemento.style.backgroundColor = corFundo.value;
+					elemento.style.border = "3px solid purple";
+					elemento.style.fontSize = "200%";
+					estado = 1;
+					}
+					else {
+						elemento.style.cor = "black";
+						elemento.style.backgroundColor = "white";
+						elemento.style.border = "none";
+						elemento.style.fontSize = "100%";
+						estado = 0;
+						}
+				}					
+	
+	</script>
+	
+	
+  </head>
+  <body>
+    <section class="container">
+		<header style="background:#000; color:#ccc; width:100%;">
+			<h1 style="margin-left:2%;">JavaScript</h1>
+			<h2 style="margin-left:4%;">Introdução</h2>
+		</header>
+		<main>
+			<h3>Mudando cores usando campo seletor de formulário</h3>
+			
+			<p>Este texto é o modelo para
+				<span id="item" style="font-weight:bold;">mudar de cor e cor de fundo!!!</span>
+			</p>
+			
+			<label for="paletaCor"> Cor de texto: </label>
+			<input type="color" value="#f00000" id="paletaCor">
+			
+			<br>
+			
+			<label for="paletaCorFundo"> Cor do Fundo: </label>
+			<input type="color" value="#ccff66" id="paletaCorFundo">
+			
+			<hr>
+			<input type="submit" onclick="mudaCores();" class="btn btn-success" value="Clique para trocar as cores">
+<hr>
+<hr size="10px" color="#ccc">
+<hr>
+		<h3>Exemplo de cálculo usando operadores aritméticos</h3>
+		<p>Operadores aritméticos são</p>
+			<ul>
+				<li> + para adição </li>
+				<li> - para subtração </li>
+				<li> * para multiplicação </li>
+				<li> / para divisão </li>
+				<li> % para resto de divisão </li>
+			</ul>
+		
+		
+		<div>O cálculo da função de Multiplicação obteve o resultado de: </div>
+		<p id="calculo" style="font-size:34px; font-weight:bold; color:#f00;"></p>
+		
+		<script>
+			var x = minhaFuncao(50,350); 
+				document.getElementById("calculo").innerHTML = x;
+			function minhaFuncao(a,b) {
+			return a * b;
+			}		
+		</script>
+		
+		
+	<hr>
+	<hr size="10px" color="#ccc">
+	<hr>		
+	
+		<h2>Mudar cor de Fundo da Página</h2>
+		
+		<div style="margin-top:4%;">
+		
+			<input type="submit" class="btn btn-secondary" onclick="trocarFundo()" value="Trocar Fundo">
+			
+			<script>
+				function rande(number) {
+					return Math.floor(Math.random() * number);
+					}
+					function trocarFundo() {
+						const corRand = 'rgb(' + rande(255) + ',' + rande(255) + ',' + rande(255) + ')';
+						document.body.style.backgroundColor = corRand;
+						}		
+			
+			</script>	
+		</div>
+		<hr>
+		<hr size="10px" color="#ccc">
+		<hr>	
+		
+		<h2>Recebendo um dado de um campo input</h2>
+		<h3>Formulário + Método window.alert</h3>
+		
+		<h3>Cadastro</h3>
+		
+		<form name="teste" method="get" style="width:50%;">
+			<label for="name">Digite o seu nome:</label>
+			<input type="text" name="name" id="idNome" class="form-control">
+			
+			<label for="email" style="padding-top:2%;">Digite seu email:</label>
+			<input type="email" name="email" id="emailDigitado" class="form-control">
+			
+			<div style="padding-top:2%;">
+				<input type="submit" name="botao" id="idBotao"class="btn btn-danger" onclick="mensagem();" value="Enviar">
+							
+			</div>		
+		</form>
+		
+		<script>
+			function mensagem() {
+			var valorNome = document.getElementById("idNome").value;
+			alert("Bem vinda(o),  " + valorNome);
+			}	
+		
+		</script>
+		
+		<hr>
+		<hr>
+		<hr>
+		<h3>Exemplo de Concatenação</h3>
+		<p>Valores e texto concatenados</p>
+		
+		<p id="valores"></p>
+		
+		<script>
+			var primeiroNome, ultimoNome; //declaração das variáveis
+			var idade; //declaração separada pois recebe outro tipo de dado
+			
+			primeiroNome = "Ana "; //atribuição de dados para as variáveis
+			ultimoNome = "de Souza "; //qdo for texto, sempre entre ""
+			idade = 18; //recebe um valor inteiro
+			
+			
+			//concatenação é a "junção" dos dados das variáveis atribuídas ou não de um script
+			document.getElementById("valores").innerHTML = primeiroNome + ultimoNome + + idade + " anos";
+		
+		</script>
+		
+		<hr>
+		<hr>
+		<hr>
+		<h3>Js inline</h3>
+		<p>Trabalhando com imagens</p>
+		
+		<div class="row">
+		<div class="col-md-4">
+		<input type="submit" onclick="document.getElementById('lampada').src='img/ligada.gif'" value="Acender a Luz" class="btn btn-info">
+		</div>
+		
+		<div class="col-md-4">
+		<img src="img/desligada.gif" style="width:40%" id="lampada"/>
+		</div>
+		
+		<div class="col-md-4">
+		<input type="submit" onclick="document.getElementById('lampada').src='img/desligada.gif'" value="Apagar a Luz" class="btn btn-info">
+		</div>
+		</div>		
+		
+		
+		
+		</main>	
+	</section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
