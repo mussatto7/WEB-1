@@ -1,0 +1,65 @@
+.Conteudo {
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.App-content {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.topo {
+  background-color: #000;
+  color:hotpink;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.rodape {
+  background-color: #363636;
+  color:#fff;
+  width: 100%;
+
+}
+
+.bar {
+  background-color: #4B0082;
+  color:#fff;
+  width: 100%;
+}
+
+.formulario {
+  border-bottom:1px #4B0082 solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+  line-height: 2vmin;
+  height: calc(2.5em + 2px);
+}
+
+.menu a {
+  background-color: #ff1493;
+  padding: 4%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #ff69b4;
+}
